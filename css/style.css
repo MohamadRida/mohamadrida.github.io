@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #330000;
+  color: #3D6B7D;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #330000;
+  color: #3D6B7D;
   outline: none;
   text-decoration: none;
 }
@@ -71,17 +71,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #330000;
+  background: #3D6B7D;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #330000;
+  background: #3D6B7D;
 }
 
 ::selection {
   color: #fff;
-  background: #330000;
+  background: #3D6B7D;
 }
 
 #fh5co-header,
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(51,0,0,0.5);
+  background: rgba(61,107,125,0.5);
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -222,10 +222,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-features {
-  background: #330000;
+  background: #F0F1F2;
 }
 #fh5co-features h2 {
-  color: #fff;
+  color: #2B2B2E;
 }
 #fh5co-features .services-padding {
   padding: 7em 0;
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 100px;
-  color: #330000 !important;
+  color: #3D6B7D !important;
 }
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
@@ -265,17 +265,17 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-features .feature-left h3 {
   font-size: 24px;
   font-weight: 400;
-  color: #fff;
+  color: #2B2B2E;
 }
 #fh5co-features .feature-left p {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.65);
 }
 #fh5co-features .feature-left p:last-child {
   margin-bottom: 0;
 }
 #fh5co-features .feature-left p a {
-  color: #000 !important;
+  color: #3D6B7D !important;
 }
 
 #fh5co-about,
@@ -307,11 +307,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-bg-dark {
-  background: #2F3C4F;
-  background: #330000;
+  background: #F4F5F6;
 }
 .fh5co-bg-dark .fh5co-heading h2 {
-  color: #fff !important;
+  color: #2B2B2E !important;
+}
+.fh5co-bg-dark .fh5co-heading p {
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .info {
@@ -365,7 +367,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #330000;
+  color: #3D6B7D;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -402,7 +404,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 20px;
 }
 #fh5co-about .fh5co-social-icons li a:hover {
-  background: #330000;
+  background: #3D6B7D;
 }
 
 .fh5co-heading {
@@ -532,7 +534,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #330000;
+  background-color: #3D6B7D;
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -801,7 +803,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 54px;
   border: none !important;
   background: #fff;
-  color: #330000;
+  color: #3D6B7D;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1111,9 +1113,9 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: #330000;
+  background: #3D6B7D;
   color: #fff;
-  border: 2px solid #330000;
+  border: 2px solid #3D6B7D;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #ff9b1a !important;
@@ -1121,11 +1123,11 @@ input[type="text"] {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #330000;
-  border: 2px solid #330000;
+  color: #3D6B7D;
+  border: 2px solid #3D6B7D;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #330000;
+  background: #3D6B7D;
   color: #fff;
 }
 
@@ -1255,7 +1257,7 @@ input[type="text"] {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #330000;
+  border-color: #3D6B7D;
 }
 
 .row-pb-md {
@@ -1291,3 +1293,13 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Fix: Selected Projects section reuses .feature-left/.feature-copy markup
+   without the #fh5co-features id scope, so headings need their own
+   light-text rule against the dark background here. */
+#fh5co-work .feature-left .feature-copy h3 {
+  color: #2B2B2E;
+}
+#fh5co-work .feature-left .feature-copy p {
+  color: rgba(0, 0, 0, 0.65);
+}
