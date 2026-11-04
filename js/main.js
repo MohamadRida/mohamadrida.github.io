@@ -142,7 +142,7 @@
 		fullHeight();
 		parallax();
 		// pieChart();
-		skillsWayPoint();
+		// skillsWayPoint(); // pie charts removed from the page
 	});
 
 
